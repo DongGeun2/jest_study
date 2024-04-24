@@ -15,6 +15,11 @@ toStrictEqual() : 더 엄격한 비교. 완전히 똑같아야 true
 toContain() : 배열에서 아이템 포함되어 있는지
 ex) expect(["a", "b", "c"]).toContain("a")
 
+beforeAll(() => console.log("코드 실행 되기전"));
+beforeEach(() => console.log("코드 실행 되기전"));
+afterAll(() => console.log("코드 실행 된 후"));
+afterEanch(() => console.log("코드 실행 된 후"));
+
 
 describe('그룹 테스트 설명 문자열', () => {
 const a = 1, b = 2; // 테스트에 사용할 일회용 가짜 변수 선언

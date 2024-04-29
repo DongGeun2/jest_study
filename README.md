@@ -30,7 +30,11 @@ const a = 1, b = 2; // 테스트에 사용할 일회용 가짜 변수 선언
 
 });
 
+
 ```
+
+/** 4월 29일 **/
+Calendar 제작해보면서 Jest 적용하기.
 
 @출처 https://velog.io/@skyu_dev/Jest-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-JS%EC%9D%98-%EA%B8%B0%EB%8A%A5-%EC%A0%90%EA%B2%80%ED%95%98%EA%B8%B0
 

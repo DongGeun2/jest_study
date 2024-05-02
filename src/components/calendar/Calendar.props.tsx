@@ -1,1 +1,1 @@
-export type Icalendar = Date | null;
+export type Icalendar = Date;

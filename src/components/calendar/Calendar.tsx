@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from './Calendar.module.css';
 
@@ -8,11 +8,11 @@ import CalendarHeader from './items/CalendarHeader';
 import CalendarMain from './items/CalendarMain';
 
 const Calendar = () => {
-  const [currentDate, setCurrentDate] = useState<Date | null>(null);
+  const getDate = new Date();
+  const getYear = getDate.getFullYear();
+  const getMonth = getDate.getMonth() + 1;
 
-  useEffect(() => {
-    setCurrentDate(new Date());
-  }, []);
+  const [currentDate, setCurrentDate] = useState<Date>(new Date(getYear, getMonth, 0));
 
   return (
     <article className={styles['calendar-container']}>
